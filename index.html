@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
 
-    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
 
     <!-- custom style.css file -->
     <link rel="stylesheet" href="/css/main.css">
@@ -54,14 +54,21 @@
 
     <!-- Main Site -->
        <main id="site-main">
-
+                <section class="main-area col-1">
+                    <img class="header-img" src="./assets/face/face1.jpg"></img>
+                    <h2 class="heading">Anupam Shankar Dey</h2>
+                    <h3>XYZ Company</h3>
+                    <blockquote><em>Here's your blockuote in italics Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, officiis magni sapi <u>Underlined text here</u> ea est aliquam architecto harum inventore itaque veritatis illum similique non blanditiis perspiciatis!</em></blockquote>
+                    <p><strong>Hi There! Bold text</strong> Short Bio: Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, fuga!</p>
+                    <a href="#"><button class="btn btn-primary primary-title mb-3"><strong>Email Me</strong><i class="fa fa-envelope"></i></button></a>
+                </section>
             <!-- Blog Post Section -->
                 <section id="posts">
                     <div class="container">
                         <div class="grid">
                             <!-- article -->
                                 <div class="grid-item">
-                                    <article class="article" id="post1">
+                                    <article class="article">
                                         <div class="card">
                                             <div class="overflow-img">
                                                 <a href="post.html">
@@ -265,8 +272,34 @@
                     </div>
                 </section>
             <!-- .Blog Post Section -->
-
-
+            <!-- Recent Posts Section  -->
+            <!-- card usage  -->
+            <section class="recent-contents">
+                <div class="recent-heading heading">
+                    <h3>RECENT POSTS</h3>
+                </div>
+                <div class="post-grid">
+                    <card class="card-item col-3">
+                        <img src="./assets/img1.jpg" alt="Managing Challenges of Distance Learning">
+                        <figcaption>Caption 1</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem odit molestiae ducimus officia culpa, totam id eum corrupti temporibus?</p>
+                        <a href="post.html"><button class="btn btn-primary secondary-title text-light">Read More</button></a>
+                    </card>
+                    <card class="card-item col-3">
+                        <img src="./assets/img9.jpg" alt="Benefits of Studying Online">
+                        <figcaption>Caption 2</figcaption>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, sed nobis exercitationem dignissimos at beatae culpa deserunt vero magnam odio.</p>
+                        <a href="post.html"><button class="btn btn-primary secondary-title text-light">Read More</button></a>
+                    </card>
+                    <card class="card-item col-3">
+                        <img src="./assets/img2.jpg" alt="Going Back to Studies as an Adult">
+                        <figcaption>Caption 3</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iste cumque porro voluptate quidem odit itaque doloremque incidunt nam aperiam.</p>
+                        <a href="post.html"><button class="btn btn-primary secondary-title text-light">Read More</button></a>
+                    </card>
+                </div>
+            </section>    
+            <!-- .Recent Posts Section 
        </main>
     <!-- .Main Site -->
 

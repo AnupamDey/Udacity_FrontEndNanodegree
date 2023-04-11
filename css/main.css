@@ -54,6 +54,11 @@ a{
     display: flex;
 }
 
+.col-1{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
 .col-3{
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
@@ -68,6 +73,10 @@ a{
 .col-4{
     flex: 0 0 30%;
     max-width: 30%;
+}
+
+.col-1 {
+    width: 100%;
 }
 
 @media (max-width : 1024px){
@@ -101,6 +110,7 @@ a{
     #site-main{
         margin-top: 14em;
     }
+
 }
 
 @media (max-width : 768px){
@@ -113,6 +123,7 @@ a{
         max-width: calc(100% - 50px);
         padding-top: 40px 50px;
     }
+
 }
 
 @media (max-width : 574px){
@@ -147,4 +158,17 @@ a{
         margin-top: 6em;
     }
 
+}
+
+@media ( min-width : 574px ) {
+    .grid {
+        grid-template-columns: repeat(2,750px);
+    }
+
+}
+
+@media ( min-width : 992px ) {
+    .grid {
+        grid-template-columns: repeat(3,500px);
+    }
 }

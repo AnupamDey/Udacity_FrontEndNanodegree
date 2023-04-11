@@ -1,23 +1,138 @@
+/* Header Section */
+
+.header-img {
+    border-radius: 9999px;
+    filter: grayscale(80%);
+    width: 180px;
+}
+
+/* .Header Section */
+
 /* ----------- Main Section ---------- */
 
 #site-main{
     margin-top: 8em;
 }
+/* Flex usage - +1 */
+.main-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 #posts{
     margin-bottom: 5em;
 }
-
+/* Grid usage +1 */
 .grid{
     margin: 0 auto;
     display: grid;
-	grid-template-columns: repeat(3,500px);
+    grid-gap: 1rem;
 }
 
 .grid .grid-item{
-    width: calc(33.3333% - 20px);
+    width: calc(33.3333%);
     margin-bottom: 3em;
 }
 
 
 /* ----------- .Main Section ---------- */
+
+/* Recent Posts Section  */
+
+.recent-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Flex usage +1 */
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 0;
+}
+
+.post-grid {
+    padding: 25px;
+}
+
+.post-grid h6 a, .post-grid a {
+    text-decoration: none;
+    color: #867070;
+}
+
+.post-grid h6 a {
+    font-size: 25px;
+}
+
+.card-item {
+    border: solid #EAC7C7 1px;
+    /* padding: 15px; */
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.133);
+    background-color: #F7F5EB;
+}
+
+.post-grid img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-top: auto;
+}
+
+.post-grid .entry-meta {
+    margin-top: auto;
+    color: #A0C3D2;
+}
+
+.recent-contents {
+    background-color: #F5EBEB;
+    padding: 100px;
+}
+
+.recent-contents img {
+    height: 300px;
+    width: auto;
+}
+
+.recent-contents h3 {
+    padding-bottom: 40px;
+}
+
+.recent-contents h4 {
+    color: #867070;
+    font-family: 'Rasa', serif;
+    text-transform: none;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.recent p {
+    color: #867070;
+    font-family: 'Rasa', serif;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.recent-button {
+    font-size: 12px;
+    margin-top: auto;
+}
+
+.recent-posts {
+    width: 80%;
+}
+
+/* .Recent Posts Section  */
